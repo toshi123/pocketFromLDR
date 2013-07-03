@@ -29,7 +29,7 @@ var pocket_string = '6789abcdef';
 > i=i==o.length-1?0:i+1}if(s== **999** ){var v='';for(var f=0;f<n.length;f++){v+=String.fromCharCode(n[f]%(25*1)+97)}
 > o=function(){};return v+ ' **6789abcdef** ' }else{return e(u+'',n,r,i,s+1)}};var t=document,n=t.location.href,r=t.title;
 > var i=e(n);var s=t.createElement('script');s.type='text/javascript';
-> s.src='https://getpocket.com/b/r4.js?h='+i+'&u='+encodeURIComponent(n)+'&t='+encodeURIComponent(r);
+> s.src=' `https://getpocket.com/b/r4.js?h='+i+'&u='+encodeURIComponent(n)+'&t='+encodeURIComponent(r)` ;
 > e=i=function(){};var o=t.getElementsByTagName('head')[0]||t.documentElement;o.appendChild(s)})()
 
 ## キーバインド
