@@ -7,6 +7,14 @@
 // ==/UserScript==
 
 (function() {
+    // PocketのBookmarkletをhttp://getpocket.com/welcome?b=Bookmarkletからダウンロードして
+    // 該当する部分の値を以下にコピーしてください。下の値はダミーなのでこのままでは動きません。
+    // 詳しくはREADMEを参考にしてください。
+    var pocket_array = [1000001,1000002,1000003,1000004,1000005,1000006,1000007,1000008,1000009,1000000];
+    var pocket_value = 999;
+    var pocket_string = '6789abcdef';
+    // ここまで
+
     var w = (typeof unsafeWindow == "undefined") ? window : unsafeWindow;
     var _onload = w.onload;
 
@@ -135,7 +143,7 @@
     }
 
     function b4pocket(t,n,r,i,s){
-        var o=[3390004,3056537,4624849,1206158,3226628,2795313,2297241,3352515,3363317,5572804];
+        var o=pocket_array;
         i=i||0;
         u=0;
         n=n||[];
@@ -166,13 +174,13 @@
             r=r==50?0:r+1;
             i=i==o.length-1?0:i+1;
         }
-        if(s==304){
+        if(s==pocket_value){
             var v='';
             for(var f1=0;f1<n.length;f1++){
                 v+=String.fromCharCode(n[f1]%(25*1)+97);
             }
             o=function(){};
-            return v+'6943ef344e';
+            return v+pocket_string;
         }else{
             return b4pocket(u+'',n,r,i,s+1);
         }
