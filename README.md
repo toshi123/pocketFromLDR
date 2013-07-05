@@ -4,8 +4,8 @@
 * 動作確認環境はMac版Chrome dev channel 29.0.1541.0 dev + Tampermonkeyです。
 * pocketに投げたいエントリを選択した状態でqを押すと投稿できます。 キーバインドはソース見ていじってください。
 
-# 使い方
-## 自分の定数を書き込む
+# usage
+### 自分の定数を書き込む
 pocketFromLDR.user.jsの13〜15行目あたりをBookmarkletを参考に書き換えてください。
 公式のBookmarkletは http://getpocket.com/welcome?b=Bookmarklet で手に入ります。
 
@@ -32,7 +32,7 @@ var pocket_string = '6789abcdef';
 > s.src=' `https://getpocket.com/b/r4.js?h='+i+'&u='+encodeURIComponent(n)+'&t='+encodeURIComponent(r)` ;
 > e=i=function(){};var o=t.getElementsByTagName('head')[0]||t.documentElement;o.appendChild(s)})()
 
-## キーバインド
+### キーバインド
 
 ```javascript:pocketFromLDR.user.js
 var config = { "shortcut":"q" };
@@ -40,5 +40,11 @@ var config = { "shortcut":"q" };
 
 初期設定では`q`になっているので、好きなキーに書きなおしてください
 
+# history
+0.1  
+* Read It Later from LDR( http://userscripts.org/scripts/show/62710 )を現在のpocketで使えるように書き換えた。
+* 各自のBookmarkletに設定を書き換えてもらう仕様に変更
 
+0.2
+* LIRのボタンを廃止。ホットキーによる投稿機能のみにした。
 
