@@ -41,10 +41,12 @@ var config = { "shortcut":"q" };
 初期設定では`q`になっているので、好きなキーに書きなおしてください
 
 # history
+0.2
+* LIRのボタンを廃止。ホットキーによる投稿機能のみにした。
+
 0.1  
 * Read It Later from LDR( http://userscripts.org/scripts/show/62710 )を現在のpocketで使えるように書き換えた。
 * 各自のBookmarkletに設定を書き換えてもらう仕様に変更
 
-0.2
-* LIRのボタンを廃止。ホットキーによる投稿機能のみにした。
+
 
